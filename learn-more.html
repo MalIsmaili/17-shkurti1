@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia e Kosovës</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #003366;
+      color: #FFFFFF;
+      overflow-x: hidden;
+      position: relative;
+      background-image: url('Flag-Kosovo.webp'); 
+    }
+    .background-flag {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    
+      background-size: cover;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      max-width: 800px;
+    }
+    .btn-scroll {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-scroll:hover {
+      background-color: #e6b800;
+      transform: scale(1.05);
+    }
+    .content {
+      padding: 50px 20px;
+      background-color: #FFFFFF;
+      color: #003366;
+    }
+    .content h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      text-align: justify;
+    }
+    .footer {
+      background-color: #003366;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .btn{
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-flag"></div>
+  <section class="hero">
+    <h1>Historia e Kosovës</h1>
+    <p>Zbuloni rrënjët e lashta dhe momentet thelbësore që kanë formësuar këtë vend unik.</p>
+    <button class="btn-scroll" onclick="document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });">Lexo më poshtë</button>
+    <button class="btn" onclick="window.location.href='index.html'">Kthehu në Kryefaqe</button>
+  </section>
+  <section id="more-content" class="content">
+    <h2>Një Pasqyrë e Gjerë Historike</h2>
+    <p>
+      Territori i Kosovës ka qenë një zonë strategjike dhe një kryqëzim kulturor për mijëra vjet. Që nga kohët e lashta, këto tokë kanë qenë dëshmitare të rrjedhave të ndryshme civilizative. Rrëfimet arkëologjike dëshmojnë praninë e banorëve në këtë rajon që nga periudha prehistorike, duke krijuar themelet për një histori të pasur dhe komplekse.
+    </p>
+    <p>
+      Në periudhat antike, rajoni u shënua nga ndikimet ilire, romake dhe më vonë bizantine. Ndërkohë që Perandoria Romake zgjeronte kufijtë e saj, Kosova u bë një pikë e rëndësishme në rrjetin e tregtisë dhe komunikimit midis Lindjes dhe Perëndimit. Trashëgimia romake, përfshirë rrugët, akueduktet dhe strukturat urbane, vazhdon të jetë dëshmi e ndikimit të këtyre kohërave.
+    </p>
+    <p>
+      Gjatë Mesjetës, Kosova u kthye në një fushë betejash dhe konflikteve për pushtet. Sundimi osman, i cili filloi në fund të shekullit të 14-të, solli ndryshime të thella në strukturën shoqërore, kulturore dhe fetare të rajonit. Gjatë kësaj periudhe, traditat dhe zakonet e popullit u përforcuan, ndërkohë që ndikimet osmane u përzien me ato lokale, duke krijuar një identitet të veçantë.
+    </p>
+    <p>
+      Në periudhat moderne, Kosova u përball me sfida të mëdha nëpërmjet luftërave dhe përpjekjeve për pavarësi. Lufta për liri dhe për njohje ndërkombëtare u bë një proces i gjatë dhe i dhimbshëm, i cili solli sakrifica të mëdha nga ana e popullit. Çdo fazë e konfliktit, qoftë ajo e sundimit apo ajo e çlirimit, ka lënë gjurmë të thella në shpirtin kolektiv dhe në ndërtimin e identitetit kombëtar.
+    </p>
+    <p>
+      Pas përfundimit të konfliktit të fundit, Kosova nisi një rrugëtim të vështirë drejt rindërtimit dhe konsolidimit të institucioneve shtetërore. Procesi i demokracisë, i bashkëpunimit ndërkombëtar dhe i reformave sociale dhe ekonomike ka qenë një sfidë e vazhdueshme, por gjithashtu një burim krenarie për qytetarët.
+    </p>
+    <p>
+      Historia e Kosovës është një testament i rezistencës, pasionit dhe dëshirës për liri. Ajo jo vetëm që pasqyron ngjarjet e së kaluarës, por shërben edhe si një udhërrëfyes për brezat e ardhshëm, duke nxitur ruajtjen e identitetit kombëtar dhe promovimin e vlerave demokratike.
+    </p>
+    <p>
+      Nëse shikojmë me vëmendje historinë e kësaj tersi të lashtë, do të zbulojmë se çdo periudhë ka kontribuar në formësimin e një shoqërie të fortë dhe të bashkuar. Nga ndikimet antike deri te sfidat moderne, rruga e Kosovës është e mbushur me momente inspiruese që vazhdojnë të nxisin një ndjenjë krenarie dhe uniteti mes qytetarëve të saj.
+    </p>
+    <p>
+      Përmes studimit dhe ruajtjes së trashëgimisë së saj, Kosova synon të ndërtojë një të ardhme ku historitë e së kaluarës shërbejnë si themele për një shoqëri të drejtë, të lirë dhe të përparuar. Ky proces nuk është vetëm një udhëtim në kohë, por edhe një reflektim i thellë mbi vlerat dhe idealet që formojnë një komb.
+    </p>
+  </section>
+  <footer class="footer">
+    <p>Lavdi Deshmoreve ❤️ </p>
+  </footer>
+</body>
+</html>

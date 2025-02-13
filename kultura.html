@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kultura e Kosovës</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #003366;
+      color: #FFFFFF;
+      overflow-x: hidden;
+      position: relative;
+      background-image: url('Flag-Kosovo.webp'); 
+    }
+    .background-flag {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+     
+      background-size: cover;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      max-width: 800px;
+    }
+    .btn-scroll {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-scroll:hover {
+      background-color: #e6b800;
+      transform: scale(1.05);
+    }
+    .content {
+      padding: 50px 20px;
+      background-color: #FFFFFF;
+      color: #003366;
+    }
+    .content h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      text-align: justify;
+    }
+    .footer {
+      background-color: #003366;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .btn{
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-flag"></div>
+  <section class="hero">
+    <h1>Kultura e Kosovës</h1>
+    <p>Një përzierje unike e traditave, historisë dhe modernitetit.</p>
+    <button class="btn-scroll" onclick="document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });">Lexo më poshtë</button>
+    <button class="btn" onclick="window.location.href='index.html'">Kthehu në Kryefaqe</button>
+    
+  </section>
+  <section id="more-content" class="content">
+    <h2>Trashëgimia dhe Traditat</h2>
+    <p>
+      Kultura e Kosovës është një pasqyrim i një historie të pasur dhe të larmishme. Ajo është ndikuar nga civilizimet e lashta, Perandoria Osmane dhe trashëgimia shqiptare. Muzika, vallëzimi, artet dhe zakonet tradicionale mbeten pjesë thelbësore e jetës së përditshme.
+    </p>
+    <p>
+      Një nga aspektet më të veçanta të kulturës kosovare është vallja tradicionale. Me hapa energjikë dhe ritmikë të pasur, ajo është një simbol i gëzimit dhe bashkimit. Gjithashtu, instrumentet tradicionale si çiftelia dhe lahuta mbeten të rëndësishme në muzikën popullore shqiptare.
+    </p>
+    <p>
+      Në aspektin artistik, Kosova ka pasur një zhvillim të madh në dekadat e fundit. Piktorë, skulptorë dhe dizajnerë nga Kosova kanë fituar vlerësime ndërkombëtare. Teatri dhe kinemaja gjithashtu janë rritur me filma të suksesshëm që kanë bërë bujë në festivale botërore.
+    </p>
+    <h2>Gastronomia</h2>
+    <p>
+      Kuzhina kosovare është një përzierje e ndikimeve mesdhetare dhe ballkanike. Ushqimet tradicionale përfshijnë flinë, piten, sarma dhe speca të mbushur. Produktet e freskëta dhe erëzat vendase i japin gatimeve një shije unike dhe të paharrueshme.
+    </p>
+    <p>
+      Një element i rëndësishëm i kulturës kosovare është mikpritja. Njerëzit në Kosovë njihen për bujarinë dhe respektin ndaj mysafirëve, duke i pritur gjithmonë me çaj të ngrohtë dhe ëmbëlsira tradicionale si bakllavaja apo hallva.
+    </p>
+    <h2>Arti dhe Letërsia</h2>
+    <p>
+      Letërsia shqiptare ka luajtur një rol kyç në ruajtjen e identitetit kulturor të Kosovës. Shkrimtarë të mëdhenj si Ali Podrimja, Azem Shkreli dhe Eqrem Basha kanë ndikuar në pasurimin e kulturës me poezitë dhe tregimet e tyre të fuqishme.
+    </p>
+    <p>
+      Teatri dhe kinemaja kanë pasur një zhvillim të madh. Festivale si "Dokufest" dhe "PriFest" tërheqin artistë dhe krijues nga e gjithë bota, duke shërbyer si platforma për ekspozimin e kulturës kosovare në nivel ndërkombëtar.
+    </p>
+    <h2>Roli i Rinisë dhe Teknologjia</h2>
+    <p>
+      Brezi i ri i Kosovës po ndikon gjithnjë e më shumë në fushën e teknologjisë dhe inovacionit. Me startup-e të reja, zhvillim të softuerëve dhe krijimtari digjitale, Kosova po bëhet një qendër e rëndësishme për inovacionin në rajon.
+    </p>
+    <p>
+      Rinia kosovare është e angazhuar në zhvillimin e artit dhe kulturës përmes projekteve të ndryshme kreative, duke përfshirë dizajnin grafik, muzikën moderne dhe artin bashkëkohor. Ky kombinim i traditës me inovacionin po krijon një identitet të ri kulturor për vendin.
+    </p>
+    <p>
+      Kultura e Kosovës vazhdon të evoluojë, duke ruajtur trashëgiminë e saj të pasur dhe duke përqafuar sfidat e modernitetit. Ajo është një dëshmi e qëndrueshmërisë dhe kreativitetit të një kombi të vogël, por me shpirt të madh.
+    </p>
+  </section>
+  <footer class="footer">
+    <p>Lavdi Deshmoreve ❤️</p>
+  </footer>
+</body>
+</html>

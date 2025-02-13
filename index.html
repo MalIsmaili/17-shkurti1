@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17 Shkurti - Dita e Pavarësisë së Kosovës</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1A1A1A;
+      background-image: url('Flag-Kosovo.webp'); 
+      background-size: cover;
+      background-position: center center;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      animation: fadeIn 3s ease-out;
+      margin: 0;
+    }
+    p {
+      font-size: 1.6rem;
+      margin-top: 20px;
+      font-weight: 300;
+      animation: fadeIn 4s ease-out;
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    button {
+      margin: 10px;
+      padding: 12px 35px;
+      font-size: 1.2rem;
+      background-color: #FFB81C;
+      color: #1A1A1A;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.1);
+      background-color: #FF9F00;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gëzuar 17 Shkurti!</h1>
+    <p>Një ditë e rëndësishme për popullin e Kosovës. Pavarësia jonë është simbol i lirisë dhe unitetit.</p>
+    <div class="buttons">
+      <button onclick="window.location.href='learn-more.html'">Mëso më shumë</button>
+      <button onclick="window.location.href='kultura.html'">Kultura</button>
+      <button onclick="window.location.href='deklarataeKosoves.html'">Deklarata e Pavarësisë</button>
+      <button onclick="window.location.href='galeri.html'">Galeri</button>
+    </div>
+  </div>
+</body>
+</html>

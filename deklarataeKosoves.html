@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deklarata e Pavarësisë</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #003366;
+      color: #FFFFFF;
+      overflow-x: hidden;
+      position: relative;
+      background-image: url('Flag-Kosovo.webp'); 
+    }
+    .background-flag {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    
+      background-size: cover;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      max-width: 800px;
+    }
+    .btn-scroll {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-scroll:hover {
+      background-color: #e6b800;
+      transform: scale(1.05);
+    }
+    .content {
+      padding: 50px 20px;
+      background-color: #FFFFFF;
+      color: #003366;
+    }
+    .content h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      text-align: justify;
+    }
+    .footer {
+      background-color: #003366;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-flag"></div>
+  <section class="hero">
+    <h1>Deklarata e Pavarësisë</h1>
+    <p>Shpallja e Pavarësisë e Kosovës është një moment historik, që shënon fundin e një periudhe të gjatë të pasigurisë dhe luftërave, dhe hap një kapitull të ri në historinë e kombit kosovar.</p>
+    <button class="btn-scroll" onclick="document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });">Lexo më poshtë</button>
+    <button class="btn" onclick="window.location.href='index.html'">Kthehu në Kryefaqe</button>
+  </section>
+  <section id="more-content" class="content">
+    <h2>Shpallja e Pavarësisë</h2>
+    <p>Me 17 Shkurt 2008, Kosova shpalli pavarësinë e saj nga Serbia, duke u bërë një shtet i pavarur dhe sovran. Ky moment u arrit pas shumë viteve të luftës, pasigurisë dhe pasojave të pasluftës, dhe pas një periudhe të gjatë të administratës ndërkombëtare të Kombeve të Bashkuara (OKB). Pavarësia e Kosovës është një arritje e madhe për popullin e Kosovës dhe ka qenë rezultat i një pune të palodhshme të institucioneve dhe qytetarëve të Kosovës që luftuan për të drejtat dhe lirinë e tyre.</p>
+    <p>Shpallja e pavarësisë ka pasur ndikim të madh jo vetëm për Kosovën, por edhe për rajonin dhe botën. Deri më tani, shumë shtete kanë njohur pavarësinë e Kosovës, ndërsa ende ka shtete që nuk e kanë bërë këtë. Pavarësia e Kosovës është një hap i rëndësishëm për stabilitetin dhe paqen në Ballkan dhe për integrimin e Kosovës në bashkësinë ndërkombëtare.</p>
+    <div class="gallery-item">
+        <img src="https://en.ata.gov.al/wp-content/uploads/2019/02/8695623586-0ef345e747-b.jpg" alt="Pamje e Kosovës 2">
+      </div>
+  </section>
+  <footer class="footer">
+    <p>Lavdi Deshmoreve ❤️ </p>
+  </footer>
+</body>
+</html>

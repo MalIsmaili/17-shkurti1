@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria e Kosovës</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #003366;
+      color: #FFFFFF;
+      overflow-x: hidden;
+      position: relative;
+      background-image: url('Flag-Kosovo.webp'); 
+    }
+    .background-flag {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+     
+      background-size: cover;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      max-width: 800px;
+    }
+    .btn-scroll {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-scroll:hover {
+      background-color: #e6b800;
+      transform: scale(1.05);
+    }
+    .content {
+      padding: 50px 20px;
+      background-color: #FFFFFF;
+      color: #003366;
+    }
+    .content h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+      text-align: justify;
+    }
+    .footer {
+      background-color: #003366;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #FFCC00;
+      color: #003366;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Gallery Styling */
+    .gallery-item {
+      display: inline-block;
+      margin: 10px;
+      width: 300px; /* Set a fixed width for the images */
+      height: auto;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="background-flag"></div>
+  <section class="hero">
+    <h1>Galeria</h1>
+    <p>Galeria e Kosovës tregon momente të rëndësishme gjatë luftës, duke pasqyruar sakrificat dhe forcën e popullit kosovar në luftën për liri dhe pavarësi.</p>
+    <button class="btn-scroll" onclick="document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });">Lexo më poshtë</button>
+    <button class="btn" onclick="window.location.href='index.html'">Kthehu në Kryefaqe</button>
+  </section>
+  <section id="more-content" class="content">
+    <h2>Një Pasqyrë e Gjerë Vizuale</h2>
+    
+    <div class="gallery-item">
+      <img src="https://www.reuters.com/resizer/v2/https%3A%2F%2Farchive-images.prod.global.a201836.reutersmedia.net%2F2009%2F02%2F17%2F2009-02-17T201017Z_02_RP1DRIHUUFAB_RTRRPP_0_YUGOSLAVIA-KOSOVO.JPG?auth=92eb574ca4ace4f63c5ee44fd4f9782710e11dd620116f8be7ffa18c1607f97c&width=1920&quality=80" alt="Pamje e Kosovës 1">
+    </div>
+    <div class="gallery-item">
+      <img src="https://functions.rblcdn.co.uk/sitefinity/images/default-source/remembrance/joy---war-on-conf1ict---kosovo---51978073---52450.jpg?sfvrsn=7dde66ef_0&method=CropCropArguments&width=1600&height=847" alt="Pamje e Kosovës 2">
+    </div>
+    <div class="gallery-item">
+      <img src="https://i.guim.co.uk/img/media/70454e6ff47fc28f5aa81112ab3580318c321593/0_350_4096_2458/master/4096.jpg?width=465&dpr=1&s=none&crop=none" alt="Pamje e Kosovës 3">
+    </div>
+    <div class="gallery-item">
+      <img src="https://news.bbcimg.co.uk/media/images/39941000/jpg/_39941053_kos_prist_ap.jpg" alt="Pamje e Kosovës 4">
+    </div>
+    <div class="gallery-item">
+      <img src="https://anywhereiwander.com/wp-content/uploads/2014/04/bomb-damage-pristina.jpg" alt="Pamje e Kosovës 5">
+    </div>
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Prishtina_maj_2005.jpg/1200px-Prishtina_maj_2005.jpg" alt="Pamje e Kosovës 6">
+    </div>
+    <div class="gallery-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVCjECw1aheotxLDVFSTurtfWURPPI8l9aEA&s" alt="Pamje e Kosovës 7">
+    </div>
+    <div class="gallery-item">
+      <img src="https://wander-lush.org/wp-content/uploads/2019/05/Emily-Lush-Prishtina-Kosovo-37.jpg" alt="Pamje e Kosovës 8">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/9b/61/08.jpg" alt="Pamje e Kosovës 9">
+    </div>
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Prishtina_perspektiv%C3%AB_nga_Radio_Kosova_5.jpg/760px-Mapcarta.jpg" alt="Pamje e Kosovës 10">
+    </div>
+  </section>
+  <footer class="footer">
+    <p>Lavdi Deshmoreve ❤️ </p>
+  </footer>
+</body>
+</html>
